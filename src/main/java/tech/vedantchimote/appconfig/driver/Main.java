@@ -11,7 +11,7 @@ public class Main {
         ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfig.class);
 
         PrintWriter printWriter = applicationContext.getBean( PrintWriter.class);
-        printWriter.write("Chalo ab yeh bhi print kar lo");
+        printWriter.write("printing through the service");
 
     }
 }

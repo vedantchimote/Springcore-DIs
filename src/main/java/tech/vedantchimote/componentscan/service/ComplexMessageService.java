@@ -1,11 +1,12 @@
-package tech.vedantchimote.appconfig.service;
+package tech.vedantchimote.componentscan.service;
 
 import org.springframework.stereotype.Service;
 
-@Service
+@Service("complexMessageService")
 public class ComplexMessageService implements MessageService {
     @Override
     public void sendMessage(String message) {
         System.out.println(message);
     }
+
 }

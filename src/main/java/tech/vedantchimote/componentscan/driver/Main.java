@@ -1,17 +1,19 @@
-package tech.vedantchimote.appconfig.driver;
+package tech.vedantchimote.componentscan.driver;
 
-import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import tech.vedantchimote.appconfig.config.AppConfig;
-import tech.vedantchimote.appconfig.writer.PrintWriter;
-
+import tech.vedantchimote.componentscan.config.Config;
+import tech.vedantchimote.componentscan.writer.PrintWriter;
 public class Main {
     public static void main(String[] args) {
 
-        ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfig.class);
+        //Here we will be using the compnent scan instead of using the @Configuration annotation
 
-        PrintWriter printWriter = applicationContext.getBean( PrintWriter.class);
+        AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(Config.class);
+
+        PrintWriter printWriter = applicationContext.getBean(PrintWriter.class);
         printWriter.write("printing through the service");
+
+        applicationContext.close();
 
     }
 }

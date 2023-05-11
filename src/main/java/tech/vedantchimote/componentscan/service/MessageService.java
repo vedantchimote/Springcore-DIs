@@ -1,7 +1,7 @@
-package tech.vedantchimote.appconfig.service;
+package tech.vedantchimote.componentscan.service;
 
 public interface MessageService {
 
-    public void sendMessage(String message);
+    void sendMessage(String message);
 
 }

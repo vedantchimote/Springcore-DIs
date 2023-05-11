@@ -1,12 +1,11 @@
-package tech.vedantchimote.config;
+package tech.vedantchimote.appconfig.config;
 
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import tech.vedantchimote.service.ComplexMessageService;
-import tech.vedantchimote.service.MessageService;
-import tech.vedantchimote.service.SimpleMessageService;
-import tech.vedantchimote.writer.PrintWriter;
+import tech.vedantchimote.appconfig.service.ComplexMessageService;
+import tech.vedantchimote.appconfig.service.MessageService;
+import tech.vedantchimote.appconfig.service.SimpleMessageService;
+import tech.vedantchimote.appconfig.writer.PrintWriter;
 
 @Configuration
 public class AppConfig {

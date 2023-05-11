@@ -1,8 +1,8 @@
-package tech.vedantchimote.appconfig.service;
+package tech.vedantchimote.componentscan.service;
 
 import org.springframework.stereotype.Service;
 
-@Service
+@Service("simpleMessageService")
 public class SimpleMessageService implements MessageService {
     @Override
     public void sendMessage(String message) {

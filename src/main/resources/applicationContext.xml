@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Define PrintWriter bean -->
+    <bean id="printWriter" class="tech.vedantchimote.xmlconfiguration.writer.PrintWriter">
+        <constructor-arg ref="complexMessageService"/>
+    </bean>
+
+    <!-- Define ComplexMessageService bean -->
+    <bean id="complexMessageService" class="tech.vedantchimote.xmlconfiguration.service.ComplexMessageService"/>
+
+    <!-- Define SimpleMessageSender bean -->
+    <bean id="serviceMessageSender" class="tech.vedantchimote.xmlconfiguration.service.SimpleMessageService">
+
+    </bean>
+
+</beans>

@@ -1,4 +1,4 @@
-package tech.vedantchimote.newcompo;
+package tech.vedantchimote.componentscanexample;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
